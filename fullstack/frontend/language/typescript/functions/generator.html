@@ -1,0 +1,17 @@
+<script>
+    function* icecreamsupply()
+    {
+        yield "one scope of icecream"
+        yield "two scope of icecream"
+        yield "third scope of icecream--extra warning"
+    }
+    let praveen=icecreamsupply()
+    console.log("praveen--",praveen.next())
+    console.log("praveen--",praveen.next())
+    let kishore=icecreamsupply()
+    console.log("kishore--",kishore.next())
+    console.log("praveen--",praveen.next())
+    console.log("praveen--",praveen.next())
+
+
+</script>
