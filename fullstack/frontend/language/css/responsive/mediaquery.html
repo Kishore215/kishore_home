@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .item{
+            background-color: red;
+            color: white;
+            font-size: 40px;
+            display: none;
+        
+        @media (max-width:250px){
+            #item-1{
+                display: block;
+            }
+        }
+        @media (min-width:251px) and (max-width:500px){
+            #item-2{
+                display: block;
+                background-color: green;
+            }
+        }
+        @media (min-width:501px) and (max-width:900px){
+            #item-3{
+                display: block;
+                background-color: rgb(128, 45, 0);
+            }
+        }
+        @media (min-width:901px){
+            #item-4{
+                display: block;
+            }
+        }
+    </style>
+    <div class="container">
+        <div class="item" id="item-1">this screen starts from 0px andends at 250px name is mobile</div>
+        <div class="item" id="item-2">this screen starts from 251 andends at 500 name is tab</div>
+        <div class="item" id="item-3">this screen starts from 501 andends at 900 name is desktop</div>
+        <div class="item" id="item-4">this screen starts from 901 andends at  name is large tv</div>
+    </div>
+    <h2>Notes</h2>
+    <p>this tag will give us the screen size</p>
+    <h2>Snap</h2>
+    <img height="400px" src="./1.png" alt="">
+    <img src="./2.png" alt="">
+    <a href="./allresponsive.html"><center><button>Back</button></center></a>
+</body>
+</html>
